@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+    }
+
+    #container {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto;
+    }
+
+    /*Neon*/
+    a {
+      text-align: center;
+      font-size: 7em;
+      margin-bottom: 0;
+      margin-top: 0;
+      line-height: 1;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:nth-child(1) {
+      font-family: "Press Start 2P";
+      animation: neon 0.9s ease-in-out infinite alternate;
+    }
+
+    /*glow*/
+    @keyframes neon {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #e7c500,
+          0 0 70px #e7c500, 0 0 80px #e7c500, 0 0 100px #e7c500, 0 0 150px #e7c500;
+      }
+
+      to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e7c500,
+          0 0 35px #e7c500, 0 0 40px #e7c500, 0 0 50px #e7c500, 0 0 75px #e7c500;
+      }
+    }
+
+    /*Make stuff responsive*/
+
+    @media (max-width: 650px) {
+      a {
+        font-size: 3.5em;
+      }
+    }
+
+    @media (max-width: 375px) {
+      a {
+        font-size: 1.8em;
+      }
+
+      #container {
+        margin: 150px auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <a>
+      THANKS FOR BEING YOU.
+      I LOVE YOU BITCHES
+    </a>
+  </div>
+</body>
+
+</html>
